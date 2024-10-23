@@ -8,4 +8,7 @@
     --color-brand: #518581;
     --color-brandHover: #86AAA7;
     --color-brandActive: #487773;
+	--text-color-primary: #000000;
+	--text-color-secondary: #AFADB5;
+	--text-color-accent: #518581;
 }

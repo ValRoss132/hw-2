@@ -1,0 +1,70 @@
+@import url('../../styles/variables.css');
+
+text {
+	color: inherit;
+}
+
+.normal {
+	font-weight: 400 !important;
+}
+
+.medium {
+	font-weight: 500 !important;
+}
+
+.bold {
+	font-weight: 700 !important;
+}
+
+.primary {
+	color: var(--text-color-primary);
+}
+
+.secondary {
+	color: var(--text-color-secondary);
+}
+
+.accent {
+	color: var(--text-color-accent);
+}
+
+.title {
+	line-height: 48px;
+	font-size: 44px;
+	font-weight: 700;
+	color: var(--text-color-primary);
+}
+
+.button {
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--text-color-primary);
+}
+
+.p-20 {
+	line-height: 24px;
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--text-color-primary);
+}
+
+.p-18 {
+	line-height: 22px;
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--text-color-primary);
+}
+
+.p-16 {
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--text-color-primary);
+}
+
+.p-14 {
+	line-height: 18px;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--text-color-primary);
+}
