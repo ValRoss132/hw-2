@@ -1,0 +1,11 @@
+:root {
+    --space-xl: 24px;
+    --space-l: 20px;
+    --space-m: 16px;
+    --space-s: 14px;
+    --space-xs: 12px;
+    --space-xxs: 8px;
+    --color-brand: #518581;
+    --color-brandHover: #86AAA7;
+    --color-brandActive: #487773;
+}
