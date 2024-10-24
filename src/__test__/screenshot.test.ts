@@ -59,68 +59,68 @@ describe('Screenshot', () => {
 //     }
 //   });
 
+  screenshotTesting({
+    componentName: 'button',
+    props: {
+      className: ['test-button'],
+      children: ['Send', 'Cancel'],
+      loading: [true, false, undefined],
+      disabled: [true, false, undefined],
+    },
+    viewPort: {
+      width: 200,
+      height: 80,
+    },
+  });
+
 //   screenshotTesting({
-//     componentName: 'button',
+//     name: 'Icons',
+//     componentName: 'icons',
 //     props: {
-//       className: ['test-button'],
-//       children: ['Send', 'Cancel'],
-//       loading: [true, false, undefined],
-//       disabled: [true, false, undefined],
+//       width: ['24', '40'],
+//       height: ['24', '40'],
+//       color: ['accent', 'secondary', 'primary']
 //     },
 //     viewPort: {
-//       width: 200,
+//       width: 140,
 //       height: 80,
 //     },
 //   });
 
-  screenshotTesting({
-    name: 'Icons',
-    componentName: 'icons',
-    props: {
-      width: ['24', '40'],
-      height: ['24', '40'],
-      color: ['accent', 'secondary', 'primary']
-    },
-    viewPort: {
-      width: 140,
-      height: 80,
-    },
-  });
-
-  screenshotTesting({
-    name: 'Icons blur',
-    componentName: 'icons',
-    props: {
-      color: ['accent', 'secondary', 'primary']
-    },
-    viewPort: {
-      width: 140,
-      height: 80,
-    },
-    matchOptions: {
-      blur: 2,
-      failureThreshold: 0.02,
-    }
-  });
-
 //   screenshotTesting({
-//     name: 'button hover',
-//     componentName: 'button',
+//     name: 'Icons blur',
+//     componentName: 'icons',
 //     props: {
-//       className: ['test-button'],
-//       children: ['Send', 'Cancel'],
-//       loading: [true, false, undefined],
-//       disabled: [true, false, undefined],
+//       color: ['accent', 'secondary', 'primary']
 //     },
 //     viewPort: {
-//       width: 200,
+//       width: 140,
 //       height: 80,
 //     },
-//     evaluate: async (p: Page) => {
-//       await p.hover('.test-button');
-//       await p.waitForTimeout(300);
+//     matchOptions: {
+//       blur: 2,
+//       failureThreshold: 0.02,
 //     }
 //   });
+
+  screenshotTesting({
+    name: 'button hover',
+    componentName: 'button',
+    props: {
+      className: ['test-button'],
+      children: ['Send', 'Cancel'],
+      loading: [true, false, undefined],
+      disabled: [true, false, undefined],
+    },
+    viewPort: {
+      width: 200,
+      height: 80,
+    },
+    evaluate: async (p: Page) => {
+      await p.hover('.test-button');
+      await p.waitForTimeout(300);
+    }
+  });
 
 
 //   screenshotTesting({
