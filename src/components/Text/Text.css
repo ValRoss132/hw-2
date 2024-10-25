@@ -1,70 +1,76 @@
 @import url('../../styles/variables.css');
 
-text {
+.text {
 	color: inherit;
 }
 
-.normal {
+.weight-normal {
 	font-weight: 400 !important;
 }
 
-.medium {
+.weight-medium {
 	font-weight: 500 !important;
 }
 
-.bold {
+.weight-bold {
 	font-weight: 700 !important;
 }
 
-.primary {
-	color: var(--text-color-primary);
+.color-primary {
+	color: var(--text-color-primary) !important;
 }
 
-.secondary {
-	color: var(--text-color-secondary);
+.color-secondary {
+	color: var(--text-color-secondary) !important;
 }
 
-.accent {
-	color: var(--text-color-accent);
+.color-accent {
+	color: var(--text-color-accent) !important;
 }
 
-.title {
+.view-title {
 	line-height: 48px;
 	font-size: 44px;
 	font-weight: 700;
 	color: var(--text-color-primary);
 }
 
-.button {
+.view-button {
 	font-size: 18px;
 	font-weight: 400;
 	color: var(--text-color-primary);
 }
 
-.p-20 {
+.view-p-20 {
 	line-height: 24px;
 	font-size: 20px;
 	font-weight: 400;
 	color: var(--text-color-primary);
 }
 
-.p-18 {
+.view-p-18 {
 	line-height: 22px;
 	font-size: 18px;
 	font-weight: 400;
 	color: var(--text-color-primary);
 }
 
-.p-16 {
+.view-p-16 {
 	line-height: 20px;
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--text-color-primary);
 }
 
-.p-14 {
+.view-p-14 {
 	line-height: 18px;
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--text-color-primary);
 }
+
+/* .maxLinesStyle {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+} */

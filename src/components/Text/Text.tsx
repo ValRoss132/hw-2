@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import './Text.css';
+
 export type TextProps = {
 	/** Дополнительный класс */
 	className?: string;
@@ -27,10 +29,20 @@ const Text: React.FC<TextProps> = ({
 	maxLines,
 }) => {
 	const Component = tag;
+	const viewStyle = view ? `view-${view}` : '';
+	const weightStyle = weight ? `weight-${weight}` : '';
+	const colorStyle = color ? `color-${color}` : '';
+	const container = {
+		display: '-webkit-box',
+		'-webkit-box-orient': 'vertical',
+		'-webkit-line-clamp': `${maxLines}`,
+		overflow: 'hidden',
+	};
+	const maxLinesStyle = maxLines ? container : {};
 	return (
 		<Component
-			className={`text ${className} ${view} ${weight} ${color}
-						${maxLines ? `style='max-lines:${maxLines}'` : ''}`}
+			className={`text ${className} ${viewStyle} ${weightStyle} ${colorStyle}`}
+			style={{ ...maxLinesStyle }}
 		>
 			{children}
 		</Component>
