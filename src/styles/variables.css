@@ -15,4 +15,8 @@
 	--button-disabled: #D9D9D9;
 	--card-bg: #ffffff;
 	--card-img-bg: #D9D9D9;
+	--input-border: #ffffff;
+	--input-bg: #ffffff;
+	--input-border-focus: #518581;
+	--input-text-disable: #00000033;
 }

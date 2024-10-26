@@ -123,83 +123,83 @@ describe('Screenshot', () => {
 //   });
 
 
-  screenshotTesting({
-    componentName: 'card',
-    props: {
-      className: ['test-card'],
-      title: ['kts-school-frontend', 'kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend'],
-      subtitle: ['ktsstudio', 'kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend'],
-      contentSlot: ['99.88'],
-      // image: ['/picture.svg'],
-      captionSlot: [undefined, 'caption-text']
-    },
-    viewPort: {
-      width: 380,
-      height: 650,
-    },
-    matchOptions: {
-      failureThreshold: 0.07,
-    },
-  });
-
-  screenshotTesting({
-    name: 'card hover',
-    componentName: 'card',
-    props: {
-      className: ['test-card'],
-      title: ['kts-school-frontend', 'kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend'],
-      subtitle: ['ktsstudio', 'kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend'],
-      contentSlot: ['99.88'],
-      // image: ['/picture.svg'],
-      captionSlot: [undefined, 'caption-text']
-    },
-    viewPort: {
-      width: 380,
-      height: 650,
-    },
-    matchOptions: {
-      failureThreshold: 0.07,
-    },
-    evaluate: async (p: Page) =>
-      await p.hover('.test-card')
-  });
-
-
 //   screenshotTesting({
-//     componentName: 'input',
+//     componentName: 'card',
 //     props: {
-//       className: ['test-input'],
-//       value: ['text', undefined],
-//       placeholder: ['text', undefined],
-//       disabled: [true, false, undefined],
+//       className: ['test-card'],
+//       title: ['kts-school-frontend', 'kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend'],
+//       subtitle: ['ktsstudio', 'kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend'],
+//       contentSlot: ['99.88'],
+//       // image: ['/picture.svg'],
+//       captionSlot: [undefined, 'caption-text']
 //     },
 //     viewPort: {
-//       width: 400,
-//       height: 100,
+//       width: 380,
+//       height: 650,
 //     },
-//     // matchOptions: {
-//     //   blur: 2,
-//     //   failureThreshold: 0.02,
-//     // }
+//     matchOptions: {
+//       failureThreshold: 0.07,
+//     },
 //   });
 
 //   screenshotTesting({
-//     name: 'input focus',
-//     componentName: 'input',
+//     name: 'card hover',
+//     componentName: 'card',
 //     props: {
-//       className: ['test-input'],
-//       value: ['text', undefined],
-//       placeholder: ['text', undefined],
-//       disabled: [true, false, undefined],
+//       className: ['test-card'],
+//       title: ['kts-school-frontend', 'kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend'],
+//       subtitle: ['ktsstudio', 'kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend kts-school-frontend'],
+//       contentSlot: ['99.88'],
+//       // image: ['/picture.svg'],
+//       captionSlot: [undefined, 'caption-text']
 //     },
 //     viewPort: {
-//       width: 400,
-//       height: 100,
+//       width: 380,
+//       height: 650,
 //     },
-//     evaluate: async (p: Page) => {
-//       await p.focus('.test-input')
-//     }
+//     matchOptions: {
+//       failureThreshold: 0.07,
+//     },
+//     evaluate: async (p: Page) =>
+//       await p.hover('.test-card')
 //   });
+
+
+  screenshotTesting({
+    componentName: 'input',
+    props: {
+      className: ['test-input'],
+      value: ['text', undefined],
+      placeholder: ['text', undefined],
+      disabled: [true, false, undefined],
+    },
+    viewPort: {
+      width: 400,
+      height: 100,
+    },
+    // matchOptions: {
+    //   blur: 2,
+    //   failureThreshold: 0.02,
+    // }
+  });
+
+  screenshotTesting({
+    name: 'input focus',
+    componentName: 'input',
+    props: {
+      className: ['test-input'],
+      value: ['text', undefined],
+      placeholder: ['text', undefined],
+      disabled: [true, false, undefined],
+    },
+    viewPort: {
+      width: 400,
+      height: 100,
+    },
+    evaluate: async (p: Page) => {
+      await p.focus('.test-input')
+    }
+  });
 
 
 //   screenshotTesting({
