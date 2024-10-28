@@ -3,13 +3,9 @@ import { IconProps } from '../Icon';
 
 import Icon from '../Icon';
 
-const ArrowDownIcon: React.FC<IconProps> = ({
-	width = '24',
-	height = '24',
-	...props
-}) => {
+const ArrowDownIcon: React.FC<IconProps> = (props) => {
 	return (
-		<Icon width={width} height={height} {...props}>
+		<Icon {...props}>
 			<path
 				fill-rule="evenodd"
 				clip-rule="evenodd"

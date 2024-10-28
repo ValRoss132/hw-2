@@ -1,5 +1,10 @@
 @import url('../../../styles/variables.css');
 
+.icon {
+	fill: var(--text-color-primary);
+	stroke: var(--text-color-primary);
+}
+
 .primary {
 	fill: var(--text-color-primary);
 	stroke: var(--text-color-primary);

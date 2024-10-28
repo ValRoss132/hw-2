@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import '../../../styles/variables.css';
-
 import './icon.css';
 
 export type IconProps = React.SVGAttributes<SVGElement> & {
@@ -13,23 +11,22 @@ const Icon: React.FC<React.PropsWithChildren<IconProps>> = ({
 	className,
 	color,
 	children,
-	width,
-	height,
+	width = '24',
+	height = '24',
 	...props
 }) => {
 	return (
-		<div>
-			<svg
-				className={`icon ${className} ${color}`}
-				{...props}
-				width={width}
-				height={height}
-				viewBox="0 0 24 24"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				{children}
-			</svg>
-		</div>
+		<svg
+			className={`${color || ''} ${className || ''}`}
+			width={width}
+			height={height}
+			viewBox="0 0 24 24"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			{children}
+		</svg>
 	);
 };
 
