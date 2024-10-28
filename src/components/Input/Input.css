@@ -7,7 +7,7 @@
 	background: #fff;
 }
 
-input {
+.input {
 	color: var(--text-color-primary);
 	min-width: 300px;
 	width: 100%;
@@ -22,15 +22,15 @@ input {
 	padding-right: 2.875rem;
 }
 
-input::placeholder {
+.input::placeholder {
 	color: #AFADB5
 }
 
-input[disabled] {
+.input[disabled] {
 	color: var(--input-text-disable);
 }
 
-input:focus {
+.input:focus {
 	color: var(--text-color-primary);
 	outline: none;
 	border-radius: none;

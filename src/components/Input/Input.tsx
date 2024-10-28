@@ -20,7 +20,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 		return (
 			<div className={`input-wrapper ${className}`}>
 				<input
-					className={className}
+					className={`input ${className}`}
 					type="text"
 					{...props}
 					ref={ref}
